@@ -1,4 +1,3 @@
-<script type="javascript/worker">
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('instrument-cache').then(cache => {
@@ -24,4 +23,3 @@ self.addEventListener('fetch', e => {
     caches.match(e.request).then(response => response || fetch(e.request))
   );
 });
-</script>
