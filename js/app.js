@@ -21,6 +21,7 @@ function showInstrument(instrument) {
   img.onload = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 50, 20, 400, 250);
+    ctx.fillText(instrument.description, 20, 250);
     ctx.font = '20px Arial';
     ctx.fillText(instrument.title, 20, 290);
   };
