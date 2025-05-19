@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World of Instruments - Promo & Docs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f0f0f5;
+      color: #333;
+    }
+    h1, h2 {
+      color: #000;
+    }
+    img {
+      width: 300px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>World of Instruments - Promotional Page</h1>
+
+  <p><strong>Live App:</strong> <a href="https://jasonxcharles.github.io/World-Of-Instruments/" target="_blank">Click here to try the app</a></p>
+
+  <h2>📱 What is this?</h2>
+  <p><strong>World of Instruments</strong> is an educational Progressive Web App (PWA) that introduces users to different musical instruments. Each instrument has an image, a brief description, and a sound clip. It works online and offline, and can be installed on your device just like a native app.</p>
+
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>Interactive canvas displaying the selected instrument</li>
+    <li>Buttons to explore multiple instruments</li>
+    <li>Plays an audio sample of each instrument</li>
+    <li>Offline-ready thanks to a service worker</li>
+    <li>Installable on phones and desktops</li>
+  </ul>
+
+  <h2>🖼 Screenshots</h2>
+  <img src="images/trumpet.jpg" alt="Trumpet Screenshot">
+  <img src="images/harp.jpg" alt="Harp Screenshot">
+  <img src="images/bass.jpg" alt="Double Bass Screenshot">
+
+  <h2>📥 How to Install</h2>
+  <ol>
+    <li>Open the app in Chrome, Edge, or Safari.</li>
+    <li>Click the install icon (a plus sign in the address bar) or tap "Add to Home Screen" on mobile.</li>
+    <li>The app will be saved to your device and can be opened without the browser.</li>
+  </ol>
+
+  <hr>
+  <h2>👨‍💻 Programmer Documentation</h2>
+
+  <h3>How to Add a New Instrument</h3>
+  <ol>
+    <li>Open <code>data/instruments.json</code></li>
+    <li>Add a new entry like below:</li>
+  </ol>
+
+  <pre>
+{
+  "title": "Violin",
+  "description": "A bowed string instrument used in orchestras and solo performances.",
+  "image": "images/violin.jpg",
+  "audio": "audio/violin.mp3"
+}
+  </pre>
+
+  <ol start="3">
+    <li>Save your violin image to the <code>images/</code> folder.</li>
+    <li>Save the violin audio sample to the <code>audio/</code> folder.</li>
+  </ol>
+
+  <p>That’s it! The app will automatically show the new instrument next time it loads.</p>
+
+</body>
+</html>
