@@ -1,4 +1,3 @@
-<script type="application/json" id="json-data">
 {
   "instruments": [
     {
@@ -21,4 +20,3 @@
     }
   ]
 }
-</script>
