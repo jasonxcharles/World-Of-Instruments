@@ -1,0 +1,24 @@
+<script type="application/json" id="json-data">
+{
+  "instruments": [
+    {
+      "title": "Trumpet",
+      "description": "A brass instrument commonly used in classical and jazz ensembles.",
+      "image": "images/trumpet.jpg",
+      "audio": "audio/trumpet.mp3"
+    },
+    {
+      "title": "Harp",
+      "description": "A multi-string instrument played by plucking with fingers, often associated with classical and folk music.",
+      "image": "images/harp.jpg",
+      "audio": "audio/harp.mp3"
+    },
+    {
+      "title": "Double Bass",
+      "description": "The largest and lowest-pitched bowed string instrument used in orchestras and jazz bands.",
+      "image": "images/bass.jpg",
+      "audio": "audio/bass.mp3"
+    }
+  ]
+}
+</script>
