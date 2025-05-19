@@ -1,9 +1,8 @@
-<script>
 let canvas = document.getElementById('instrumentCanvas');
 let ctx = canvas.getContext('2d');
 let currentAudio;
 
-fetch('js/instruments.json')
+fetch('data/instruments.json')
   .then(res => res.json())
   .then(data => {
     const menu = document.getElementById('instrumentMenu');
@@ -21,9 +20,9 @@ function showInstrument(instrument) {
   img.onload = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 50, 20, 400, 250);
-    ctx.fillText(instrument.description, 20, 250);
     ctx.font = '20px Arial';
     ctx.fillText(instrument.title, 20, 290);
+    ctx.fillText(instrument.description, 20, 320);
   };
   img.src = instrument.image;
 
@@ -32,6 +31,7 @@ function showInstrument(instrument) {
   currentAudio.play();
 }
 
+// PWA install prompt
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -39,7 +39,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   installBtn.style.display = 'inline';
 });
+
 installBtn.addEventListener('click', () => {
   deferredPrompt.prompt();
 });
-</script>
