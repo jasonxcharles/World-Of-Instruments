@@ -2,7 +2,7 @@ let canvas = document.getElementById('instrumentCanvas');
 let ctx = canvas.getContext('2d');
 let currentAudio;
 
-fetch('data/instruments.json')
+fetch('./data/instruments.json')
   .then(res => res.json())
   .then(data => {
     const menu = document.getElementById('instrumentMenu');
